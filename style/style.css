@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/img/new-year.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 60px;
+}
+
+.count-down
+{
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.days,.hours,
+.minutes,.seconds
+{
+    font-size: 2rem;
+}
+.timer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.timer h2
+{
+    font-size: 4rem;
+    margin: 0 0 20px;
+    font-weight: 500;
+}
+.timer small
+{
+    font-size: 30px;
+}
+.message
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.year
+{
+    font-size: 200px;
+    z-index: -1;
+    margin: 0%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+
+
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .timer {
+        margin: 5px;
+    }
+
+    .timer h2 {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .timer small {
+        font-size: 12px;
+    }
+
+    .year {
+        font-size: 100px;
+
+    }
+
+    .message {
+        font-size: 25px;
+    }
+}
+
